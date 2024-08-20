@@ -1,0 +1,93 @@
+.mb-sm {
+  margin-bottom: 2rem;
+}
+.mb-md {
+  margin-bottom: 3rem;
+}
+.mb-lg {
+  margin-bottom: 4rem;
+}
+.mb-hg {
+  margin-bottom: 8rem;
+}
+
+.mt-sm {
+  margin-top: 2rem;
+}
+.mt-md {
+  margin-top: 3rem;
+}
+.mt-lg {
+  margin-top: 4rem;
+}
+.mt-hg {
+  margin-top: 8rem;
+}
+
+.pb-sm {
+  padding-bottom: 2rem;
+}
+.pb-md {
+  padding-bottom: 3rem;
+}
+.pb-lg {
+  padding-bottom: 4rem;
+}
+.pb-hg {
+  padding-bottom: 8rem;
+}
+
+.px-sm {
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+.px-md {
+  padding-right: 3rem;
+  padding-left: 3rem;
+}
+.px-lg {
+  padding-right: 4rem;
+  padding-left: 4rem;
+}
+.px-hg {
+  padding-right: 8rem;
+  padding-left: 8rem;
+}
+
+.pr-sm {
+  padding-right: 2rem;
+}
+.pr-md {
+  padding-right: 3rem;
+}
+.pr-lg {
+  padding-right: 4rem;
+}
+.pr-hg {
+  padding-right: 8rem;
+}
+
+.text {
+  &-black {
+    color: black;
+  }
+}
+
+.relative {
+  position: relative;
+}
+
+%container {
+  padding: 8rem 14rem;
+
+  @media only screen and (max-width: $bp-largest) {
+    padding: 5rem 12rem;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    padding: 4rem 10rem;
+  }
+  @media only screen and (max-width: $bp-small) {
+    padding: 2rem;
+  }
+}

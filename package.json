@@ -1,0 +1,24 @@
+{
+  "name": "homezy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass:watch": "sass --watch sass:css",
+    "sass:compile": "sass sass/style.scss css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.all.css -o css/style.build.css",
+    "sass:compress": "sass css/style.build.css css/style.min.css --style=compressed",
+    "build:css": "npm run sass:compile && npm run prefix:css && npm run sass:compress"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "concat": "^1.0.3",
+    "postcss-cli": "^11.0.0",
+    "sass": "^1.77.8"
+  },
+  "dependencies": {
+    "postcss": "^8.4.40"
+  }
+}

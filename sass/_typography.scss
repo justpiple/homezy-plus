@@ -1,0 +1,143 @@
+%heading {
+  font-family: $font-display;
+  font-weight: 600;
+  color: black;
+}
+
+.heading-section {
+  @extend %heading;
+  font-size: 4.8rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 3.2rem;
+  }
+}
+
+.heading-1 {
+  @extend %heading;
+  font-size: 7.2rem;
+}
+.heading-2 {
+  @extend %heading;
+  font-size: 4.2rem;
+}
+.heading-3 {
+  @extend %heading;
+  font-size: 4rem;
+  line-height: 48px;
+}
+.heading-4 {
+  @extend %heading;
+  font-size: 4rem;
+  line-height: 40px;
+}
+
+.heading-5 {
+  @extend %heading;
+  font-size: 3.2rem;
+}
+
+.heading-6 {
+  @extend %heading;
+  font-size: 2.4rem;
+}
+
+.paragraph {
+  font-size: 1.6rem;
+  font-family: $font-primary;
+  font-weight: 300;
+  color: $color-grey-dark-1;
+
+  &-big {
+    font-size: 2rem;
+  }
+
+  &-medium {
+    font-size: 1.8rem;
+  }
+
+  &-small {
+    font-size: 1.4rem;
+  }
+}
+
+.bold {
+  font-weight: 700;
+}
+.semibold {
+  font-weight: 600;
+}
+
+.btn-primary {
+  padding: 1.8rem 4rem;
+
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: $font-primary;
+
+  border-radius: 15px;
+
+  color: white;
+  background-color: black;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &:active {
+    transform: scale(1.05);
+  }
+}
+
+.btn-link {
+  transition: all 0.2s;
+  &:visited,
+  &:link {
+    text-decoration: none;
+    color: black;
+  }
+
+  &:hover {
+    color: $color-primary-dark;
+  }
+}
+
+.btn-hamburger {
+  position: relative;
+
+  &,
+  &::before,
+  &::after {
+    display: inline-block;
+    width: 3rem;
+    height: 2px;
+    background-color: $color-grey-dark-1;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all 0.2s;
+  }
+
+  &::before {
+    top: -0.8rem;
+  }
+
+  &::after {
+    top: 0.8rem;
+  }
+}
+
+.center {
+  display: flex;
+
+  align-items: center;
+  gap: 2px;
+}

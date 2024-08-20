@@ -1,0 +1,57 @@
+.agents {
+  @extend %container;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 3.2rem;
+    width: 100%;
+    margin-top: 6.4rem;
+    overflow-y: scroll;
+    flex-wrap: wrap;
+
+    @media only screen and (max-width: $bp-medium) {
+      flex-wrap: nowrap;
+    }
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &__card {
+    display: flex;
+    gap: 1.4rem;
+    padding: 2.6rem;
+    background-color: white;
+    border: 1px solid $color-primary;
+    border-radius: 15px;
+    max-height: 15.6rem;
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+      text-wrap: nowrap;
+    }
+  }
+
+  &__card-contacts {
+    display: flex;
+    gap: 1.2rem;
+
+    a {
+      padding: 0.7rem;
+      background-color: black;
+      border-radius: 100%;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__card-photo {
+    height: 10.8rem;
+    width: 10.8rem;
+  }
+}

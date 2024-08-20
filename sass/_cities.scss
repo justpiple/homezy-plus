@@ -1,0 +1,53 @@
+.cities {
+  @extend %container;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    overflow-x: scroll;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      margin-left: 0;
+    }
+
+    & > * {
+      &:not(:first-child) {
+        margin-left: 1.6rem;
+      }
+      &:not(:last-child) {
+        margin-right: 1.6rem;
+      }
+    }
+  }
+
+  &__card {
+    margin-top: 6.4rem;
+    background-color: white;
+    border: 1px solid $color-primary;
+    border-radius: 15px;
+    overflow: hidden;
+    min-width: 35rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    // > img {
+    //   width: auto;
+    //   height: 75%;
+    // }
+  }
+
+  &__card-info {
+    padding: 2.4rem;
+    div {
+      display: flex;
+      gap: 0.8rem;
+    }
+  }
+}
