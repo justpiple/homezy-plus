@@ -25,7 +25,7 @@
 
   &__card {
     display: flex;
-    gap: 1.4rem;
+    gap: 2.4rem;
     padding: 2.6rem;
     background-color: white;
     border: 1px solid $color-primary;
@@ -48,6 +48,7 @@
   &__card-contacts {
     display: flex;
     gap: 1.2rem;
+    flex-wrap: wrap;
 
     a {
       padding: 0.7rem;
@@ -59,7 +60,6 @@
   }
 
   &__card-photo {
-    height: 90%;
     width: auto;
     align-items: center;
   }

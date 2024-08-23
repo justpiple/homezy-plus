@@ -573,7 +573,7 @@ body {
 }
 .agents__card {
   display: flex;
-  gap: 1.4rem;
+  gap: 2.4rem;
   padding: 2.6rem;
   background-color: white;
   border: 1px solid #e7dcff;
@@ -593,6 +593,7 @@ body {
 .agents__card-contacts {
   display: flex;
   gap: 1.2rem;
+  flex-wrap: wrap;
 }
 .agents__card-contacts a {
   padding: 0.7rem;
@@ -602,7 +603,6 @@ body {
   align-items: center;
 }
 .agents__card-photo {
-  height: 90%;
   width: auto;
   align-items: center;
 }
@@ -1091,11 +1091,13 @@ body {
 }
 .subscribe__card > :first-child > h2 {
   font-size: 4.8rem;
+  line-height: 56px;
   font-family: "Syne", sans-serif;
 }
 @media only screen and (max-width: 768px) {
   .subscribe__card > :first-child > h2 {
     font-size: 2.8rem;
+    line-height: 44px;
   }
 }
 .subscribe__card > :first-child > p {
