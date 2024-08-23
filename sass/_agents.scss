@@ -15,7 +15,7 @@
     }
 
     @media only screen and (max-width: $bp-md) {
-      grid-template-columns: repeat(9, 1fr);
+      grid-template-columns: repeat(1, 1fr);
     }
 
     &::-webkit-scrollbar {
@@ -31,6 +31,7 @@
     border: 1px solid $color-primary;
     border-radius: 15px;
     align-items: center;
+    width: 100%;
 
     > div {
       display: flex;
