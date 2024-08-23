@@ -6,18 +6,18 @@
   top: 0;
   background-color: $color-background;
 
-  @media only screen and (min-width: $bp-xlargest) {
+  @media only screen and (min-width: $bp-xxl) {
     max-width: 144rem;
   }
 
-  @media only screen and (max-width: $bp-largest) {
+  @media only screen and (max-width: $bp-xl) {
     padding: 0 10rem;
   }
 
-  @media only screen and (max-width: $bp-large) {
+  @media only screen and (max-width: $bp-lg) {
     padding: 0 5rem;
   }
-  @media only screen and (max-width: $bp-small) {
+  @media only screen and (max-width: $bp-sm) {
     padding: 0 2rem;
   }
 
@@ -26,7 +26,7 @@
     align-items: center;
     gap: 1rem;
 
-    @media only screen and (max-width: $bp-small) {
+    @media only screen and (max-width: $bp-sm) {
       margin-bottom: 0;
     }
 
@@ -41,14 +41,14 @@
     padding: 2rem 2rem;
     background-color: $color-background;
 
-    @media only screen and (min-width: $bp-xlargest) {
+    @media only screen and (min-width: $bp-xxl) {
       max-width: 144rem;
       padding: 2rem 8rem;
     }
   }
 
   &__links {
-    @media only screen and (max-width: $bp-large) {
+    @media only screen and (max-width: $bp-lg) {
       display: none;
     }
 
@@ -71,17 +71,19 @@
   &__contact {
     padding: 1.6rem 3.2rem;
     font-size: 1.6rem;
-    border: 2px solid $color-grey-dark-1;
+    font-weight: 700;
+    border: 1px solid $color-grey-dark-1;
     border-radius: 15px;
     transition: all 0.2s;
     cursor: pointer;
+    background-color: transparent;
 
     &:hover {
-      background-color: black;
+      background-color: $color-primary-dark;
       color: white;
     }
 
-    @media only screen and (max-width: $bp-large) {
+    @media only screen and (max-width: $bp-lg) {
       display: none;
     }
   }
@@ -91,7 +93,7 @@
     align-items: center;
     justify-content: center;
 
-    @media only screen and (max-width: $bp-large) {
+    @media only screen and (max-width: $bp-lg) {
       display: block;
       position: relative;
     }
@@ -131,7 +133,7 @@
 
   display: none;
 
-  @media only screen and (max-width: $bp-large) {
+  @media only screen and (max-width: $bp-lg) {
     display: block;
   }
 
@@ -143,14 +145,14 @@
     list-style: none;
     gap: 1rem;
 
-    @media only screen and (max-width: $bp-largest) {
+    @media only screen and (max-width: $bp-xl) {
       padding: 2rem 10rem;
     }
 
-    @media only screen and (max-width: $bp-large) {
+    @media only screen and (max-width: $bp-lg) {
       padding: 2rem 5rem;
     }
-    @media only screen and (max-width: $bp-small) {
+    @media only screen and (max-width: $bp-sm) {
       padding: 2rem;
     }
   }

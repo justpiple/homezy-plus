@@ -79,15 +79,17 @@
 
 %container {
   padding: 8rem 14rem;
+  // 1440 - 2xpadding inline
 
-  @media only screen and (max-width: $bp-largest) {
+  @media only screen and (max-width: $bp-xl) {
     padding: 5rem 12rem;
   }
 
-  @media only screen and (max-width: $bp-large) {
+  @media only screen and (max-width: $bp-lg) {
     padding: 4rem 10rem;
   }
-  @media only screen and (max-width: $bp-small) {
+
+  @media only screen and (max-width: $bp-sm) {
     padding: 2rem;
   }
 }

@@ -2,16 +2,20 @@
   @extend %container;
 
   &__list {
-    display: flex;
+    display: grid;
     justify-content: space-between;
     gap: 3.2rem;
     width: 100%;
     margin-top: 6.4rem;
     overflow-y: scroll;
-    flex-wrap: wrap;
+    grid-template-columns: repeat(3, 1fr);
 
-    @media only screen and (max-width: $bp-medium) {
-      flex-wrap: nowrap;
+    @media only screen and (max-width: $bp-lg) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media only screen and (max-width: $bp-md) {
+      grid-template-columns: repeat(9, 1fr);
     }
 
     &::-webkit-scrollbar {
@@ -26,14 +30,18 @@
     background-color: white;
     border: 1px solid $color-primary;
     border-radius: 15px;
-    max-height: 15.6rem;
+    align-items: center;
 
     > div {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      align-self: center;
+      gap: 2rem;
       width: 100%;
-      text-wrap: nowrap;
+    }
+
+    h6 {
+      letter-spacing: -0.04em;
     }
   }
 
@@ -51,7 +59,8 @@
   }
 
   &__card-photo {
-    height: 10.8rem;
-    width: 10.8rem;
+    height: 90%;
+    width: auto;
+    align-items: center;
   }
 }

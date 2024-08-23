@@ -19,7 +19,7 @@
       }
     }
 
-    @media only screen and (max-width: $bp-medium) {
+    @media only screen and (max-width: $bp-md) {
       flex-direction: column;
       gap: 6.4rem;
 
@@ -31,9 +31,9 @@
 
   &__link-group-parent {
     display: flex;
-    gap: 8rem;
+    gap: 10rem;
 
-    @media only screen and (max-width: $bp-small) {
+    @media only screen and (max-width: $bp-sm) {
       flex-direction: column;
       gap: 6.4rem;
     }

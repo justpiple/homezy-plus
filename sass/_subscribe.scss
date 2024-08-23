@@ -3,37 +3,46 @@
 
   &__card {
     color: white;
+
     margin: 8rem 14rem;
     padding: 5.6rem 7.2rem;
     background-color: $color-primary-dark;
     border: 2px solid black;
     border-radius: 15px;
     display: flex;
+    position: relative;
+    overflow: hidden;
 
-    @media only screen and (max-width: $bp-large) {
-      margin: 4rem 7rem;
-      padding: 2rem 3rem;
+    @media only screen and (max-width: $bp-lg) {
+      padding: 4.8rem 5.6rem;
+      margin: 4rem;
     }
 
-    @media only screen and (max-width: $bp-medium) {
-      margin: 4rem 2rem;
-      padding: 2rem 3rem;
+    @media only screen and (max-width: $bp-md) {
+      padding: 3.2rem;
+      margin: 2rem;
+    }
+
+    @media only screen and (max-width: $bp-sm) {
+      padding: 2.4rem 2.4rem 24rem;
       flex-direction: column;
     }
 
     > :first-child {
-      max-width: 45%;
-      width: inherit;
+      width: 100%;
+      flex: none;
+      max-width: 41.4rem;
+      z-index: 2;
 
-      @media only screen and (max-width: $bp-medium) {
-        max-width: 100%;
+      @media only screen and (max-width: $bp-sm) {
+        max-width: none;
       }
 
       > h2 {
         font-size: 4.8rem;
         font-family: $font-display;
 
-        @media only screen and (max-width: $bp-medium) {
+        @media only screen and (max-width: $bp-md) {
           font-size: 2.8rem;
         }
       }
@@ -45,19 +54,41 @@
     }
 
     > :last-child {
-      width: 50%;
+      width: 55%;
+      position: absolute;
+      top: -150px;
+      bottom: -22px;
+      left: auto;
+      right: 0%;
+      z-index: 1;
+
+      > img {
+        width: auto;
+        height: 100%;
+        transform: rotateX(0) rotateY(180deg) rotate(0);
+      }
+
+      @media only screen and (max-width: $bp-sm) {
+        width: auto;
+        right: auto;
+        top: auto;
+        height: 350px;
+        bottom: -16px;
+        left: -92px;
+      }
     }
 
-    @media only screen and (max-width: $bp-medium) {
-      flex-direction: column;
-      gap: 6.4rem;
-    }
+    // @media only screen and (max-width: $bp-md) {
+    //   flex-direction: column;
+    //   gap: 6.4rem;
+    //   width: 100%;
+    // }
   }
 
   &__form {
     position: relative;
 
-    @media only screen and (max-width: $bp-medium) {
+    @media only screen and (max-width: $bp-sm) {
       display: flex;
       flex-direction: column;
     }
@@ -68,7 +99,7 @@
       right: 8px;
       transform: translateY(0.9rem);
 
-      @media only screen and (max-width: $bp-medium) {
+      @media only screen and (max-width: $bp-sm) {
         position: static;
       }
     }
@@ -84,7 +115,7 @@
         border: 1px solid black;
       }
 
-      @media only screen and (max-width: $bp-medium) {
+      @media only screen and (max-width: $bp-sm) {
         min-height: 6rem;
       }
     }
