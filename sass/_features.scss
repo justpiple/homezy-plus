@@ -1,6 +1,4 @@
 .features {
-  @extend %container;
-
   & > *:not(:last-child) {
     margin-bottom: 4rem;
   }
@@ -24,6 +22,12 @@
 
       display: flex;
       align-items: center;
+
+      > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
   }
 
@@ -47,10 +51,15 @@
     }
   }
 
+  &__image-wrapper {
+    // height: 40%;
+    overflow: hidden;
+  }
   &__image {
     overflow: hidden;
     border-radius: 15px 15px 0 0;
     width: 100%;
+    object-fit: cover;
 
     &--1 {
       border-radius: 15px 0 0 15px;
@@ -64,7 +73,7 @@
       > img {
         width: 100%;
         height: 100%;
-        object-fit: contain;
+        object-fit: cover;
       }
 
       @media only screen and (max-width: $bp-lg) {

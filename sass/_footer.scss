@@ -31,21 +31,21 @@
 
   &__link-group-parent {
     display: flex;
-    gap: 10rem;
+    gap: 8rem;
 
     @media only screen and (max-width: $bp-sm) {
       flex-direction: column;
       gap: 6.4rem;
+    }
+    > div > p {
+      margin-bottom: 3.2rem;
+      font-size: 16px;
     }
   }
 
   &__link-group {
     display: flex;
     gap: 8rem;
-
-    > div > p {
-      margin-bottom: 3.2rem;
-    }
   }
 
   &__link {
@@ -56,6 +56,7 @@
     > a {
       font-size: 16px;
       color: black;
+      font-weight: 500;
     }
   }
 

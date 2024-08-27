@@ -1,6 +1,4 @@
 .agents {
-  @extend %container;
-
   &__list {
     display: grid;
     justify-content: space-between;
@@ -61,7 +59,9 @@
   }
 
   &__card-photo {
-    width: auto;
     align-items: center;
+    border-radius: 15px;
+    width: 108px;
+    height: 108px;
   }
 }

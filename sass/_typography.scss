@@ -113,6 +113,24 @@
   }
 }
 
+.btn-secondary {
+  padding: 1.6rem 3.2rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  border: 1px solid $color-grey-dark-1;
+  border-radius: 15px;
+  transition: all 0.2s;
+  cursor: pointer;
+  background-color: transparent;
+  width: fit-content;
+  display: inline-block;
+
+  &:hover {
+    background-color: $color-primary-dark;
+    color: white;
+  }
+}
+
 .btn-hamburger {
   position: relative;
 

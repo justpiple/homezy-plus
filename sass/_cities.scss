@@ -1,6 +1,4 @@
 .cities {
-  @extend %container;
-
   &__list {
     display: flex;
     justify-content: space-between;
@@ -36,11 +34,7 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-
-    // > img {
-    //   width: auto;
-    //   height: 75%;
-    // }
+    flex-grow: 1;
   }
 
   &__card-info {

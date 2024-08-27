@@ -1,25 +1,9 @@
 .navbar {
-  padding: 0 14rem;
   position: fixed;
   width: 100%;
   z-index: 999;
   top: 0;
   background-color: $color-background;
-
-  @media only screen and (min-width: $bp-xxl) {
-    max-width: 144rem;
-  }
-
-  @media only screen and (max-width: $bp-xl) {
-    padding: 0 10rem;
-  }
-
-  @media only screen and (max-width: $bp-lg) {
-    padding: 0 5rem;
-  }
-  @media only screen and (max-width: $bp-sm) {
-    padding: 0 2rem;
-  }
 
   &__brand {
     display: flex;
@@ -29,21 +13,18 @@
     @media only screen and (max-width: $bp-sm) {
       margin-bottom: 0;
     }
-
-    img {
-      width: 40px;
-    }
   }
   &__wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem 2rem;
     background-color: $color-background;
+    padding: 2rem 0;
 
-    @media only screen and (min-width: $bp-xxl) {
-      max-width: 144rem;
-      padding: 2rem 8rem;
+    > .btn-secondary {
+      @media only screen and (max-width: $bp-lg) {
+        display: none;
+      }
     }
   }
 
@@ -65,26 +46,6 @@
   &__link {
     &--item {
       list-style: none;
-    }
-  }
-
-  &__contact {
-    padding: 1.6rem 3.2rem;
-    font-size: 1.6rem;
-    font-weight: 700;
-    border: 1px solid $color-grey-dark-1;
-    border-radius: 15px;
-    transition: all 0.2s;
-    cursor: pointer;
-    background-color: transparent;
-
-    &:hover {
-      background-color: $color-primary-dark;
-      color: white;
-    }
-
-    @media only screen and (max-width: $bp-lg) {
-      display: none;
     }
   }
 

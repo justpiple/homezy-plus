@@ -93,3 +93,46 @@
     padding: 2rem;
   }
 }
+
+.container {
+  width: 100%;
+  max-width: 1240px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media only screen and (max-width: $bp-lg) {
+    max-width: none;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media only screen and (max-width: $bp-lg) {
+    max-width: none;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media only screen and (max-width: $bp-md) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  position: relative;
+  overflow: hidden;
+
+  @media only screen and (max-width: $bp-lg) {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+
+  @media only screen and (max-width: $bp-md) {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}

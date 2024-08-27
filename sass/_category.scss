@@ -1,6 +1,4 @@
 .category {
-  @extend %container;
-
   &__list {
     display: flex;
     gap: 3.2rem;
