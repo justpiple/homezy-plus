@@ -31,7 +31,7 @@
 
   &__link-group-parent {
     display: flex;
-    gap: 8rem;
+    gap: 80px;
 
     @media only screen and (max-width: $bp-sm) {
       flex-direction: column;
@@ -45,7 +45,7 @@
 
   &__link-group {
     display: flex;
-    gap: 8rem;
+    gap: 80px;
   }
 
   &__link {

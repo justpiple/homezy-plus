@@ -892,7 +892,7 @@ body {
 }
 .footer__link-group-parent {
   display: flex;
-  gap: 8rem;
+  gap: 80px;
 }
 @media only screen and (max-width: 576px) {
   .footer__link-group-parent {
@@ -906,7 +906,7 @@ body {
 }
 .footer__link-group {
   display: flex;
-  gap: 8rem;
+  gap: 80px;
 }
 .footer__link {
   display: flex;
