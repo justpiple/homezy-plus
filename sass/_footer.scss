@@ -1,8 +1,7 @@
-.footer {
-  @extend %container;
-
+footer {
   padding-bottom: 3.2rem !important;
-
+}
+.footer {
   display: flex;
   flex-direction: column;
   gap: 6rem;
