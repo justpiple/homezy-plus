@@ -256,7 +256,7 @@ header.section {
   .hero__right {
     margin-left: 0;
     margin-right: 0;
-    height: 46rem;
+    height: 36rem;
   }
 }
 .hero__illustration {
@@ -327,7 +327,7 @@ header.section {
 }
 @media only screen and (max-width: 575px) {
   .hero__illustration > div:last-child > img {
-    top: -40%;
+    top: -35%;
   }
 }
 .hero__pattern {
@@ -351,7 +351,7 @@ header.section {
     bottom: -55%;
     left: 0;
     width: 100%;
-    height: 85%;
+    height: 100%;
   }
 }
 
@@ -727,7 +727,7 @@ header.section {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 3.2rem;
 }
 @media only screen and (max-width: 991px) {
   .features__info--1 {
@@ -785,6 +785,7 @@ header.section {
   padding: 20px;
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-top: 0.8rem;
 }
 @media only screen and (max-width: 767px) {
   .features__facilities--1 {

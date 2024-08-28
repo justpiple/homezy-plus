@@ -82,7 +82,7 @@ header.section {
       margin-left: 0;
       margin-right: 0;
 
-      height: 46rem;
+      height: 36rem;
     }
   }
 
@@ -151,7 +151,7 @@ header.section {
         }
 
         @media only screen and (max-width: $bp-sm) {
-          top: -40%;
+          top: -35%;
         }
       }
     }
@@ -178,7 +178,7 @@ header.section {
       bottom: -55%;
       left: 0;
       width: 100%;
-      height: 85%;
+      height: 100%;
     }
   }
 }
