@@ -1,6 +1,6 @@
 // COLOR VARIABLES
 $color-primary: #e7dcff;
-$color-primary-dark: #cfb9fd;
+$color-primary-dark: #c1a5ff;
 
 $color-secondary: #ffe1f2;
 
@@ -15,11 +15,11 @@ $color-background: #fbfaff;
 $font-primary: "Hanken Grotesk", sans-serif;
 $font-display: "Syne", sans-serif;
 
-$bp-xxl: 1400px;
-$bp-xl: 1200px;
-$bp-lg: 992px;
-$bp-md: 768px;
-$bp-sm: 576px;
+$bp-xxl: 1399px;
+$bp-xl: 1999px;
+$bp-lg: 991px;
+$bp-md: 767px;
+$bp-sm: 575px;
 
 *,
 *::before,
@@ -33,7 +33,7 @@ html {
   box-sizing: border-box;
   font-size: 62.5%; // 10px
 
-  @media only screen and (max-width: $bp-xl) {
+  @media only screen and (max-width: $bp-lg) {
     font-size: 50%; // 8px
   }
 }

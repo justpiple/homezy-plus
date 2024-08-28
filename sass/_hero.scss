@@ -1,8 +1,10 @@
 header.section {
   padding-top: 156px;
+  padding-bottom: 122px;
 
   @media only screen and (max-width: $bp-lg) {
     padding-top: 104px;
+    padding-bottom: 96px;
   }
 }
 
@@ -44,6 +46,11 @@ header.section {
     flex-direction: column;
     gap: 4.8rem;
     max-width: 685px;
+
+    > .paragraph {
+      max-width: 457px;
+      font-size: 20px;
+    }
   }
 
   &__text {
@@ -171,7 +178,7 @@ header.section {
       bottom: -55%;
       left: 0;
       width: 100%;
-      height: 100%;
+      height: 85%;
     }
   }
 }
@@ -191,8 +198,12 @@ header.section {
   @media only screen and (max-width: $bp-md) {
     flex-direction: column;
     width: 100%;
-    padding: 1rem;
-    gap: 1.6rem;
+    padding: 16px;
+    gap: 16px;
+  }
+
+  .btn-primary {
+    padding: 18px 40px;
   }
 
   &__item {

@@ -13,6 +13,20 @@ footer {
     > :first-child {
       max-width: 30%;
 
+      > :last-child {
+        display: flex;
+        gap: 2.4rem;
+        padding-top: 2.4rem;
+        a {
+          color: white;
+          background-color: black;
+          padding: 8px;
+          border-radius: 100%;
+          display: flex;
+          align-items: center;
+        }
+      }
+
       > p {
         margin-top: 2.4rem;
       }

@@ -4,6 +4,13 @@
   z-index: 999;
   top: 0;
   background-color: $color-background;
+  height: 100px;
+  display: flex;
+  align-items: center;
+
+  @media only screen and (max-width: $bp-md) {
+    height: 72px;
+  }
 
   &__brand {
     display: flex;
@@ -19,7 +26,6 @@
     align-items: center;
     justify-content: space-between;
     background-color: $color-background;
-    padding: 2rem 0;
 
     > .btn-secondary {
       @media only screen and (max-width: $bp-lg) {

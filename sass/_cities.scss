@@ -1,5 +1,6 @@
 .cities {
   &__list {
+    margin-top: 6.4rem;
     display: flex;
     justify-content: space-between;
     overflow-x: scroll;
@@ -25,7 +26,6 @@
   }
 
   &__card {
-    margin-top: 6.4rem;
     background-color: white;
     border: 1px solid $color-primary;
     border-radius: 15px;

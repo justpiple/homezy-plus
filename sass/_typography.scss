@@ -2,7 +2,7 @@
   font-family: $font-display;
   font-weight: 600;
   color: black;
-  letter-spacing: -4%;
+  letter-spacing: -0.04em;
 }
 
 .heading-section {
@@ -11,7 +11,7 @@
   line-height: 56px;
 
   @media only screen and (max-width: $bp-md) {
-    font-size: 3.2rem;
+    font-size: 4rem;
     line-height: 40px;
   }
 }
@@ -50,25 +50,25 @@
 }
 
 .paragraph {
-  font-size: 1.6rem;
+  font-size: 16px;
   font-family: $font-primary;
   font-weight: 300;
-  color: $color-grey-dark-1;
-  line-height: 24px;
+  color: #686a79;
+  line-height: 20px;
 
   &-big {
-    font-size: 2rem;
-    line-height: 2em;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   &-medium {
-    font-size: 1.8rem;
-    line-height: 1.625em;
+    font-size: 18px;
+    line-height: 22px;
   }
 
   &-small {
-    font-size: 1.4rem;
-    line-height: 1.375em;
+    font-size: 14px;
+    line-height: 24px;
   }
 }
 
@@ -80,9 +80,9 @@
 }
 
 .btn-primary {
-  padding: 1.8rem 4rem;
+  padding: 16px 32px;
 
-  font-size: 1.8rem;
+  font-size: 16px;
   font-weight: 700;
   font-family: $font-primary;
 
@@ -115,8 +115,8 @@
 }
 
 .btn-secondary {
-  padding: 1.6rem 3.2rem;
-  font-size: 1.6rem;
+  padding: 16px 32px;
+  font-size: 16px;
   font-weight: 700;
   border: 1px solid $color-grey-dark-1;
   border-radius: 15px;

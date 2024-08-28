@@ -10,7 +10,7 @@
     position: relative;
     overflow: hidden;
     max-width: 1240px;
-    width: calc(100% - 4rem);
+    width: calc(100% - 12rem);
     margin: 8rem auto;
 
     @media only screen and (max-width: $bp-lg) {
@@ -99,9 +99,9 @@
 
     > button {
       position: absolute;
-      padding: 1.6rem 3.2rem;
-      right: 8px;
-      transform: translateY(0.9rem);
+      padding: 16px 32px;
+      right: 5px;
+      transform: translateY(5px);
 
       @media only screen and (max-width: $bp-sm) {
         position: static;
@@ -110,17 +110,25 @@
 
     > input {
       width: 100%;
-      min-height: 8rem;
+      min-height: 68px;
       border: none;
       border-radius: 15px;
       padding: 0 16px;
+      outline: none;
+
+      &::placeholder {
+        font-size: 16px;
+        color: #b7b8c1;
+        font-family: $font-primary;
+        line-height: 26px;
+      }
 
       &:focus {
         border: 1px solid black;
       }
 
       @media only screen and (max-width: $bp-sm) {
-        min-height: 6rem;
+        min-height: 52px;
       }
     }
   }
