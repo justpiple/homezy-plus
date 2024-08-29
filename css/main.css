@@ -213,8 +213,8 @@ header.section {
 }
 @media only screen and (max-width: 767px) {
   .hero__title {
-    font-size: 48px;
-    line-height: 56px;
+    font-size: 42px;
+    line-height: 50px;
   }
 }
 .hero__left {
@@ -237,6 +237,10 @@ header.section {
 }
 .hero__text > :not(:first-child) {
   margin-top: 2.4rem;
+}
+.hero__text > p {
+  font-size: 20px;
+  line-height: 30px;
 }
 .hero__right {
   width: 420px;
@@ -372,7 +376,7 @@ header.section {
     flex-direction: column;
     width: 100%;
     padding: 16px;
-    gap: 16px;
+    gap: 32px;
   }
 }
 .cta .btn-primary {
@@ -392,7 +396,7 @@ header.section {
 }
 @media only screen and (max-width: 767px) {
   .cta__item-icon {
-    padding: 0.75px;
+    padding: 7.5px;
   }
 }
 
