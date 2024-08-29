@@ -37,7 +37,7 @@
     overflow: visible;
 
     &--1 {
-      padding: 2.4rem 3.2rem;
+      padding: 24px 32px 32px;
       width: 100%;
 
       display: flex;
@@ -47,6 +47,7 @@
 
       @media only screen and (max-width: $bp-lg) {
         gap: 2.4rem;
+        padding: 24px 24px 24px;
       }
     }
   }

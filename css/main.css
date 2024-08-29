@@ -740,7 +740,7 @@ header.section {
   overflow: visible;
 }
 .features__info--1 {
-  padding: 2.4rem 3.2rem;
+  padding: 24px 32px 32px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -749,6 +749,7 @@ header.section {
 @media only screen and (max-width: 991px) {
   .features__info--1 {
     gap: 2.4rem;
+    padding: 24px 24px 24px;
   }
 }
 .features__image-wrapper {
