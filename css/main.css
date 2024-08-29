@@ -241,6 +241,7 @@ header.section {
 .hero__text > p {
   font-size: 20px;
   line-height: 30px;
+  max-width: 457px;
 }
 .hero__right {
   width: 420px;
