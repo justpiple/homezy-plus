@@ -549,6 +549,18 @@ header.section {
   gap: 2px;
 }
 
+.icon-link {
+  width: 32px;
+  height: 32px;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  overflow: hidden;
+}
+
 .agents__list {
   display: grid;
   justify-content: space-between;
@@ -1224,6 +1236,10 @@ footer {
 
 .mb-hg {
   margin-bottom: 8rem;
+}
+
+.mr-1 {
+  margin-right: 2px;
 }
 
 .mt-sm {
