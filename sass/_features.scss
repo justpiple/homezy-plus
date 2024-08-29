@@ -224,7 +224,7 @@
   &__triangle {
     position: absolute;
     border-top: 7px solid $color-grey-dark-1;
-    border-left: 7px solid $color-background;
+    border-left: 7px solid transparent;
 
     bottom: 0;
     left: 0;

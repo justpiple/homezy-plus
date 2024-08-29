@@ -902,7 +902,7 @@ header.section {
 .featured__triangle {
   position: absolute;
   border-top: 7px solid #686a79;
-  border-left: 7px solid #fbfaff;
+  border-left: 7px solid transparent;
   bottom: 0;
   left: 0;
   right: auto;
